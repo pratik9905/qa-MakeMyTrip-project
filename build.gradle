@@ -18,13 +18,16 @@ repositories {
 
 dependencies {
 
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    // https://mvnrepository.com/artifact/org.testng/testng
+    // testImplementation group: 'org.testng', name: 'testng', version: '7.7.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
-   
+
     // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
-    implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
+    // implementation 'io.github.bonigarcia:webdrivermanager:5.6.3'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.3'
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    // implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.17.0'
     implementation 'org.seleniumhq.selenium:selenium-java:4.14.0'
 
 }
@@ -35,6 +38,7 @@ dependencies {
 
 //run.dependsOn startScript
 
-//test.dependsOn startScript
+//test.dependsOn startScriptchmod +x gradlew
+
 
 mainClassName = 'demo.App'
